@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import carmen from "./carmen.svg";
+import Survey from "./Survey";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <header>
+        <img src={carmen} alt="Carmen López" />
+        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+          <img src={logo} className="app-logo" alt="logo" />
         </a>
       </header>
+      <main>
+        <Survey />
+      </main>
+      <footer>
+        <h3>Coded by Carmen López @ 2022</h3>
+      </footer>
     </div>
   );
 }
