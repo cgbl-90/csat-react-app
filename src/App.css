@@ -54,4 +54,10 @@ button {
   font-weight: 900;
   font-size: 1rem;
   background-color: #faebf1;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.question {
+  font-size: 1.8rem;
 }
