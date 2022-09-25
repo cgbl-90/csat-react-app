@@ -111,3 +111,12 @@ button:focus {
 .multipleChoise:focus {
   box-shadow: 2px 2px 2px #c204a8;
 }
+
+.rate:active,
+.rate:checked,
+.oneChoise:active,
+.oneChoise:checked,
+.multipleChoise:active,
+.multipleChoise:checked {
+  box-shadow: 2px 2px 2px 2px #c204a8;
+}
