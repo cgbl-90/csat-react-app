@@ -1,5 +1,6 @@
 import { useState } from "react";
 import questions from "./questions.json";
+import Questions from "./Questions";
 import "./App.css";
 
 export default function Survey() {
@@ -8,6 +9,11 @@ export default function Survey() {
   function nextQuestion(event) {
     event.preventDefault();
     setCount(count + 1);
+  }
+
+  function lastQuestion(event) {
+    event.preventDefault();
+    setCount(count - 1);
   }
 
   if (count === 0) {
@@ -28,9 +34,11 @@ export default function Survey() {
         <h1 className="title">thank you!</h1>
         <h3>
           Thanks for completing the survey about your experience using our
-          Product! Your feedback helps us improve our offerings for you and
+          product! Your feedback helps us improve our offerings for you and
           other customers.
         </h3>
+        <button onClick={lastQuestion}>BACK</button>
+        <button>SUBMIT</button>
       </div>
     );
   }
@@ -39,30 +47,9 @@ export default function Survey() {
       <h1 className="question">
         {count + ". " + questions[count - 1].question}
       </h1>
-      {(() => {
-        switch (questions[count - 1].correct) {
-          case "one":
-            return questions.options.map((choise) => {
-              <li className="oneChoise">{choise}</li>;
-            });
-          case "multiple":
-            return questions.options.map((choise) => {
-              <li className="multipleChoise">{choise}</li>;
-            });
-          case "open":
-            return <input type="text" className="textBox" />;
-          case "rate":
-            return questions.options.map((choise) => {
-              <span className="rate">{choise}</span>;
-            });
-          case "close":
-            return questions.options.map((choise) => {
-              <span className="rate">{choise}</span>;
-            });
-          case "email":
-            return <input type="text" className="textBox" />;
-        }
-      })()}
+      <Questions count={count - 1} />
+      <br />
+      <button onClick={lastQuestion}>BACK</button> 
       <button onClick={nextQuestion}>NEXT</button>
     </div>
   );

@@ -1,91 +1,58 @@
 [
   {
     "question": "How long have you been using our software?",
-    "options": {
-      "a": "More than one year",
-      "b": "Less than a year",
-      "b": "I'm a beta user"
-    },
+    "options": ["More than one year", "Less than a year", "I'm a beta user"],
     "typeof": "one"
   },
   {
     "question": "What was the main factor for you when deciding on using our software? ",
-    "options": {
-      "a": "It is easy and effortless",
-      "b": "Good price",
-      "c": "It offers all the key features I need",
-      "d": "I know how to set up its more advanced features",
-      "e": "It feels fast and responsive"
-    },
+    "options": [
+      "It is easy and effortless",
+      "Good price",
+      "It offers all the key features I need",
+      "I know how to set up its more advanced features",
+      "It feels fast and responsive"
+    ],
     "typeof": "multiple"
   },
   {
     "question": "How could we improve your experience using our solution?",
-    "options": {
-      "a": "interface",
-      "b": "feature request",
-      "c": "customer support"
-    },
-    "correct": "open"
+    "options": ["interface", "feature request", "customer support"],
+    "typeof": "open"
   },
   {
     "question": "How often do you use our solution?",
-    "options": {
-      "a": "Every day",
-      "b": "A few days per week",
-      "c": "A few times per month",
-      "d": "Less often"
-    },
-    "correct": "one"
+    "options": [
+      "Every day",
+      "A few days per week",
+      "A few times per month",
+      "Less often"
+    ],
+    "typeof": "one"
   },
   {
     "question": "How would you rate the overall quality of our service?",
-    "options": {
-      "a": "1",
-      "b": "2",
-      "c": "3",
-      "d": "4",
-      "e": "5",
-      "f": "6",
-      "g": "7"
-    },
-    "correct": "rate"
+    "options": ["1", "2", "3", "4", "5", "6", "7"],
+    "typeof": "rate"
   },
   {
     "question": "How likely are you to recommend our solution?",
-    "options": {
-      "a": "1",
-      "b": "2",
-      "c": "3",
-      "d": "4",
-      "e": "5"
-    },
-    "correct": "rate"
+    "options": ["1", "2", "3", "4", "5"],
+    "typeof": "rate"
   },
   {
     "question": "And finally, what sector is your business in?",
-    "options": {
-      "a": "Software",
-      "b": "Medicine",
-      "c": "Education",
-      "d": "Maining"
-    },
-    "correct": "open"
+    "options": ["Software", "Medicine", "Education", "Maining"],
+    "typeof": "open"
   },
   {
     "question": "Are you available for a short call with us to share more details?",
-    "options": {
-      "a": "Yes",
-      "b": "No"
-    },
-    "correct": "close"
+    "options": ["Yes", "No"],
+    "typeof": "close"
   },
   {
     "question": "Please, indicate your email",
-    "options": {
-      "a": "@gmail.com",
-      "b": "@hotmail.com"
-    },
-    "correct": "email"
+    "options": ["@gmail.com", "@hotmail.com"],
+    "typeof": "email"
   }
 ]

@@ -47,17 +47,67 @@ main {
 }
 
 button {
-  margin: 30px 0px;
+  margin: 50px 4px;
   padding: 10px 20px;
   min-width: 100px;
   border: 3px solid grey;
   font-weight: 900;
   font-size: 1rem;
-  background-color: #faebf1;
-  position: absolute;
+  background-color: transparent;
   border-radius: 4px;
+  display: inline;
+}
+
+button:hover,
+button:focus {
+  background-color: #f5b1cb;
 }
 
 .question {
   font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+.oneChoise,
+.multipleChoise {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 25px;
+  border: 2px solid grey;
+  width: max-content;
+}
+
+.textBox {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid grey;
+  display: block;
+  width: 100%;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.rate {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 30px 4px;
+  border-radius: 4px;
+  border: 2px solid grey;
+}
+
+.rate:hover,
+.rate:focus,
+.oneChoise:hover,
+.oneChoise:focus,
+.multipleChoise:hover,
+.multipleChoise:focus {
+  box-shadow: 2px 2px 2px #c204a8;
 }
